@@ -35,7 +35,7 @@ The variable can be one of these options:
 - plain variable, e.g. `x`
 - list of variables (type `content`), e.g. `#([x], [y])`
 - list of variables with higher degrees (type `(content, integer)`), e.g. `#([x], ([y], 2))`
-The degree is smartly calculated: If all degrees of the variables are integers, the total degree is their sum. If some are content, the integer ones are summed up and added to the sum of content degrees. Example: `deg: #(([x], n), ([y], 2))` → $\frac{\partial^{n+2}}{\partial x^n\,\partial y^2}$ 
+The degree is smartly calculated: If all degrees of the variables are integers, the total degree is their sum. If some are content, the integer ones are summed (arithmetically) up and added to the visual sum of the content degrees. Example: `deg: #(([x], n), ([y], 2))` → $\frac{\partial^{n+2}}{\partial x^n\,\partial y^2}$ 
 
 ### `dvps`
 Same as `dvp`, but separates the function from the derivative.
